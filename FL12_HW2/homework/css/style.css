@@ -1,0 +1,215 @@
+@media print {
+    body,
+    .padding-medium,
+    .carousel,
+    footer.tm-footer {
+        padding-top: 0;
+        margin: 0;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+
+    .carousel-indicators,
+    .img-contact-us,
+    .tm-sidebar,
+    .tm-team-img,
+    #contact {
+        display: none;
+    }
+    .boxes {
+        font-style: italic;
+        background-color: #efedef;
+    }
+    .boxes h2 {
+        font-style: normal;
+    }
+    .tm-content-box {
+        margin-bottom: 0;
+    }
+    .tm-main-content {
+        padding-top: 0;
+    }
+    ol li:nth-of-type(2n+1) {
+        text-align: right;
+        right: 30%;
+        position: relative;
+    }
+
+    h2 {
+        background-color: transparent;
+        color: lightskyblue;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+
+    footer.tm-footer p:only-of-type {
+        margin-bottom: 0;
+    }
+
+    .heading ol {
+        text-align: left;
+        list-style-type: none;
+    }
+    ol li:nth-of-type(2n) {
+        position: relative;
+        left: 20%;
+    }
+}
+
+@media screen {
+    .tm-nav-item-link:hover {
+        background-color: lightskyblue;
+        color: #fff;
+    }
+
+    .tm-banner {
+        background: linear-gradient(to right, lightskyblue, burlywood);
+    }
+
+    .tm-banner-text {
+        position: relative;
+        animation: text-animation 4s 0.5s;
+        text-shadow: 5px 5px 3px #333;
+    }
+
+    .tm-banner-inner {
+        background-color: #fff;
+        overflow: hidden;
+    }
+
+    .flex-2-col {
+        display: flex;
+        align-items: center;
+    }
+
+    .flex-2-col h2 {
+        text-align: center;
+    }
+
+    @keyframes text-animation {
+        from {
+            width: 100%;
+            margin-left: 200px;
+        }
+        to {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+    .tm-section-description {
+        line-height: 30px;
+    }
+
+    .tm-box-bg-title:hover {
+        background-color: lightgrey;
+        color: lightskyblue;
+        font-style: italic;
+    }
+
+    ol {
+        list-style-type: lower-alpha;
+        font-weight: 200;
+    }
+
+    .heading h2 {
+        background-color: white;
+        color: lightskyblue;
+        text-align: center;
+    }
+
+    section, #home, .tm-sidebar {
+        box-shadow: 0 1px 1em rgba(61, 55, 61, 0.7);
+    }
+
+    .contact-form {
+        padding-bottom: 22px;
+    }
+
+    #contact_name,
+    #contact_subject,
+    #contact_email {
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: solid 1px #86cefb;
+    }
+    #contact_message {
+        border: solid 1px #86cefb;
+        background-image: url('../img/email-icon.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: 99% 80%;
+
+    }
+
+    .blocks li p {
+        font-style: italic;
+    }
+
+    .heading li:hover::before {
+        content: ">";
+    }
+
+    .blocks li {
+        padding: 10px;
+    }
+    .blocks li:nth-of-type(odd) {
+        background-color: lightskyblue;
+        color: white;
+    }
+
+    .blocks li p::first-letter {
+        font-weight: bold;
+    }
+
+    section ol li a.text::after {
+        color: red;
+        font-variant: small-caps;
+        font-weight: bold;
+        display: inline-block;
+        content: "New";
+        vertical-align: super;
+        font-size: 60%;
+    }
+
+    .submit-btn {
+        background-color: white;
+        border: 1px solid lightskyblue;
+        color: lightskyblue;
+        float: right;
+        padding: 15px 25px;
+    }
+
+    #contact_name:focus{
+        color: #55595c;
+        background-color: lightskyblue;
+    }
+    #contact_email:focus{
+        color: #55595c;
+        background-color: lightskyblue;
+    }
+    #contact_subject:focus {
+        color: #55595c;
+        background-color: lightskyblue;
+    }
+
+    section::before {
+        border: 0 solid transparent;
+        border-right-width: 45px;
+        border-top: 45px solid lightskyblue;
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+    }
+}
+.tm-section-description {
+    text-indent: 25px;
+}
+.blocks p:nth-of-type(2) {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+}
