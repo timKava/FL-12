@@ -1,0 +1,257 @@
+@mixin btn {
+  background: $joinButton;
+  border: none;
+  border-radius: 2px;
+  font-family: $mainText;
+  font-weight: bold;
+  color: #fff;
+  height: 35px;
+  width: 100px;
+
+}
+
+@mixin links($color, $fontFamily, $fontSize) {
+  color: $color;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $pageBack;
+  color: $textColor;
+  font-family: $justText;
+
+
+}
+
+.header {
+  background-size: 100% auto;
+  background-position: 0px -190px;
+  border-bottom-right-radius: 525px 200px;
+  width: 100%;
+  height: 500px;
+  background-image: $backImg;
+  background-repeat: no-repeat;
+
+  .header-wrap {
+    margin-left: 130px;
+    position: relative;
+    width: 420px;
+    padding-left: 2px;
+    padding-top: 11px;
+    height: inherit;
+    p {
+      :before {
+        background-color: $word;
+        z-index: 0;
+        top: 160px;
+        width: 213px;
+        height: 35px;
+        content: '';
+        position: absolute;
+      }
+    }
+
+    .header_heading {
+      font-weight: bold;
+      font-family: $mainText;
+      font-size: 50px;
+      position: absolute;
+      z-index: 3;
+      line-height: 50px;
+      top: 45px;
+      letter-spacing: 0.5px;
+    }
+
+    .header_text {
+      line-height: 17px;
+      white-space: pre;
+      font-size: 11px;
+      position: absolute;
+      top: 211px;
+      left: -30px;
+      letter-spacing: 0.23px;
+    }
+
+    .header_button {
+      @include btn;
+      position: absolute;
+      top: 348px;
+      left: 4px;
+    }
+
+    .login {
+      @include links(#fff, $mainText, 14px);
+      position: absolute;
+      left: 200px;
+      top: 355px;
+    }
+
+
+  }
+
+}
+
+.landing-logo {
+  display: flex;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    margin-bottom: 2px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
+  span {
+    font-size: 7px;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+}
+
+.section {
+  margin: -5px 21% 0 21%;
+  position: relative;
+
+  > p:before {
+    left: 398px;
+    width: 130px;
+    height: 35px;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    background-color: $word;
+  }
+
+  :last-child p:last-child:before {
+    left: 205px;
+    width: 50px;
+    height: 30px;
+    background-color: $word;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 15px;
+  }
+}
+
+.section_text {
+  font-family: $mainText;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  font-size: 29px;
+}
+
+.section_card {
+  border-radius: 4px;
+  padding: 15px;
+  height: 200px;
+  background-color: $mainBack;
+  margin-bottom: 10px;
+
+  .section_card_img {
+    border-radius: 4px;
+    height: 200px;
+    width: 300px;
+  }
+
+  .section_card_right_container {
+    color: white;
+    width: 50%;
+    float: right;
+    padding: 0 20px;
+
+    .section_card_heading {
+      line-height: 30px;
+      text-align: center;
+      font-family: $mainText;
+      font-weight: 600;
+    }
+
+    .section_card_text {
+      width: 350px;
+      font-size: 12px;
+    }
+
+    .section_link {
+      @include links(#fff, $mainText, 12px);
+      margin-left: 40%;
+    }
+  }
+}
+
+.section_banner {
+  border-radius: 5px;
+  margin: auto -30px;
+  padding: 10px 15% 0 15%;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $mainText;
+  z-index: 2;
+  position: absolute;
+  bottom: -205px;
+  right: 0;
+  left: 0;
+  height: 100px;
+  display: flex;
+  background: linear-gradient(to right, $startGrad, $endGrad);
+
+  .section_banner_text_wrap {
+    vertical-align: middle;
+
+    p {
+      line-height: 10px;
+    }
+
+    .section_banner_heading {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .section_banner_text {
+      margin-bottom: 40px;
+      font-size: 11px;
+      color: white;
+    }
+  }
+
+  .section_banner_button {
+    @include btn;
+  }
+}
+
+.footer {
+  background-color: $footBack;
+
+  .footer-wrap {
+    padding: 85px 10% 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer_logo {
+      @extend .landing-logo;
+      height: 32px;
+    }
+
+    .footer_text {
+      width: 220px;
+      font-size: 10px;
+    }
+
+    .footer-cr {
+      height: 32px;
+      font-size: 11px;
+    }
+  }
+}

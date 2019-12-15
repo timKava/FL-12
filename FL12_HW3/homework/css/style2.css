@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #21232e;
+  color: black;
+  font-family: "Hind", sans-serif; }
+
+.header {
+  background-size: 100% auto;
+  background-position: 0px -190px;
+  border-bottom-right-radius: 525px 200px;
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/m-h-night.jpg);
+  background-repeat: no-repeat; }
+  .header .header-wrap {
+    margin-left: 130px;
+    position: relative;
+    width: 420px;
+    padding-left: 2px;
+    padding-top: 11px;
+    height: inherit; }
+    .header .header-wrap p :before {
+      background-color: #ff4e33;
+      z-index: 0;
+      top: 160px;
+      width: 213px;
+      height: 35px;
+      content: '';
+      position: absolute; }
+    .header .header-wrap .header_heading {
+      font-weight: bold;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 50px;
+      position: absolute;
+      z-index: 3;
+      line-height: 50px;
+      top: 45px;
+      letter-spacing: 0.5px; }
+    .header .header-wrap .header_text {
+      line-height: 17px;
+      white-space: pre;
+      font-size: 11px;
+      position: absolute;
+      top: 211px;
+      left: -30px;
+      letter-spacing: 0.23px; }
+    .header .header-wrap .header_button {
+      background: #e3ac00;
+      border: none;
+      border-radius: 2px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: bold;
+      color: #fff;
+      height: 35px;
+      width: 100px;
+      position: absolute;
+      top: 348px;
+      left: 4px; }
+    .header .header-wrap .login {
+      color: #fff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 14px;
+      position: absolute;
+      left: 200px;
+      top: 355px; }
+
+.landing-logo, .footer .footer-wrap .footer_logo {
+  display: flex; }
+  .landing-logo img, .footer .footer-wrap .footer_logo img {
+    width: 30px;
+    height: 30px; }
+  .landing-logo p, .footer .footer-wrap .footer_logo p {
+    margin-bottom: 2px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600; }
+  .landing-logo span, .footer .footer-wrap .footer_logo span {
+    font-size: 7px;
+    margin-bottom: 3px;
+    text-align: center; }
+
+.section {
+  margin: -5px 21% 0 21%;
+  position: relative; }
+  .section > p:before {
+    left: 398px;
+    width: 130px;
+    height: 35px;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0px;
+    background-color: #ff4e33; }
+  .section :last-child p:last-child:before {
+    left: 205px;
+    width: 50px;
+    height: 30px;
+    background-color: #ff4e33;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 15px; }
+
+.section_text {
+  font-family: "Source Sans Pro", sans-serif;
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  font-size: 29px; }
+
+.section_card {
+  border-radius: 4px;
+  padding: 15px;
+  height: 200px;
+  background-color: #3b3f50;
+  margin-bottom: 10px; }
+  .section_card .section_card_img {
+    border-radius: 4px;
+    height: 200px;
+    width: 300px; }
+  .section_card .section_card_right_container {
+    color: white;
+    width: 50%;
+    float: right;
+    padding: 0 20px; }
+    .section_card .section_card_right_container .section_card_heading {
+      line-height: 30px;
+      text-align: center;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600; }
+    .section_card .section_card_right_container .section_card_text {
+      width: 350px;
+      font-size: 12px; }
+    .section_card .section_card_right_container .section_link {
+      color: #fff;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 12px;
+      margin-left: 40%; }
+
+.section_banner {
+  border-radius: 5px;
+  margin: auto -30px;
+  padding: 10px 15% 0 15%;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Source Sans Pro", sans-serif;
+  z-index: 2;
+  position: absolute;
+  bottom: -205px;
+  right: 0;
+  left: 0;
+  height: 100px;
+  display: flex;
+  background: linear-gradient(to right, #dfa504, #8d334f); }
+  .section_banner .section_banner_text_wrap {
+    vertical-align: middle; }
+    .section_banner .section_banner_text_wrap p {
+      line-height: 10px; }
+    .section_banner .section_banner_text_wrap .section_banner_heading {
+      font-weight: bold;
+      font-size: 22px; }
+    .section_banner .section_banner_text_wrap .section_banner_text {
+      margin-bottom: 40px;
+      font-size: 11px;
+      color: white; }
+  .section_banner .section_banner_button {
+    background: #e3ac00;
+    border: none;
+    border-radius: 2px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    height: 35px;
+    width: 100px; }
+
+.footer {
+  background-color: #3b3f50; }
+  .footer .footer-wrap {
+    padding: 85px 10% 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .footer .footer-wrap .footer_logo {
+      height: 32px; }
+    .footer .footer-wrap .footer_text {
+      width: 220px;
+      font-size: 10px; }
+    .footer .footer-wrap .footer-cr {
+      height: 32px;
+      font-size: 11px; }
