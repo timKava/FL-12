@@ -6,7 +6,7 @@ c = +prompt('Write your third value: ', '');
 
 D = Math.pow(b, 2) - 4 * a * c;
 
-if (isNaN(a) || isNaN(b) || isNaN(c)){
+if (isNaN(a) || isNaN(b) || isNaN(c) || a === 0){
     console.log('Invalid input data');
 } else if (D < 0){
     console.log('no solution');
